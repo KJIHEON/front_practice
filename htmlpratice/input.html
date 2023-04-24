@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta태그는 헤드안에 작성되며 정보를 의미 
+    cahrset 문자세트
+    http-equiv 콘텐츠 속성 정보 http헤더
+    name 문서 정보
+    content 메타데이터 내용-->
+    <meta charset="utf=8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="author" content="나임" />
+    <meta name="keywords" content="메타태그, 방법" />
+    <meta name="discription" content="묘상ㅅ"/>
+    <!-- 뷰포트는 화면이 보여지고 있는 영역 -->
+    <mata name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>이미지를 표시할꺼에요</title>
+  </head>
+  <!-- 스타일 지정 -->
+  <style>
+/*  */
+  </style>
+  <!-- 바디 값 -->
+  <body>
+    <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input">
+      인풋 문서</a><br>
+      <!-- 인풋 태그는 name으로 식별할 수 있음 name="원하는이름" -->
+   <input name="text" type="text" maxlength="5" placeholder="입력전에 남"><br>
+   <input name="push" type="button" value="눌러"><br>
+   <input name="color" type="color">색 넣으셈<br>
+   <input name="score" type="range" max="100" min="0" step="10"><br>
+   <input name="birthday" type="date"><br>
+   <!--multiple은 선택 박스가 펄쳐짐
+      selected 미리선택됨
+  -->
+    <select name="title" multiple>
+      <option value="click1">select는선택지 태그 </option>
+      <option value="click2">옵션도 선택 가능</option></option>
+      <option value="click3">value는 실제 처리값</option>
+      <option value="click4">커피빈</option>
+    </select><br>
+    <textarea name="content" rows="10" cols="10">rows 행 cols 열길게 쓸 수 있는 인풋이요 </textarea>
+  <br>
+    <from>
+    <input type="text" placeholder="값을 서버로 보내줄 때">
+    <br>
+    <input type="text" placeholder="패스워드">
+    <br>
+    <input type="submit" value="submit타입으로 전송">
+  </from>
+  <!-- 입력 값을 전송 할 때의 서버의 url 
+  method는 어떤 식으로 보내줄지-->
+  <form action="index.js" method="get">
+    <input name="id" type="text" placeholder="아이디">
+    <br>
+    <input name="pw" type="text" placeholder="패스워드">
+    <br>
+    <select name="title">
+      <option value="click1">1 </option>
+      <option value="click2">2</option></option>
+      <option value="click3">3</option>
+      <option value="click4">4</option>
+    </select><br>
+    <input name="id" type="submit" value="로그인">
+  </form>
+  </body>
+</html>
